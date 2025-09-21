@@ -46,13 +46,38 @@
         </div>
         
         <!-- Desktop Navigation -->
-        <div class="hidden lg:flex items-center space-x-8">
-          <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
-          <a href="/#benefits" class="text-gray-300 hover:text-white transition-colors">Why LogexAI</a>
-          <a href="/#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
-          <a href="/use-cases" class="text-white transition-colors">Use Cases</a>
-          <a href="/#contact" class="btn-primary">Get Started</a>
-        </div>
+<div class="hidden lg:flex items-center space-x-8">
+  <a href="#home" class="text-gray-300 hover:text-white transition-colors">Home</a>
+  <a href="#benefits" class="text-gray-300 hover:text-white transition-colors">Why LogexAI</a>
+<!--  <a href="#how-it-works" class="text-gray-300 hover:text-white transition-colors">How It Works</a>-->
+  <a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
+
+ <!-- Use Cases Dropdown -->
+<div class="relative group">
+  <a href="/use-cases" class="text-gray-300 hover:text-white transition-colors flex items-center">
+    Use Cases
+    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </a>
+  <div class="absolute left-0 mt-2 w-64 rounded-xl glass-dark border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+    <a href="/use-cases/adaptive-rag" class="block px-4 py-3 hover:bg-[rgba(164,208,55,0.1)] transition-colors border-b border-gray-800">
+      <div class="font-semibold text-white">🤖 Adaptive RAG Assistant</div>
+      <div class="text-xs text-gray-400 mt-1">Explore Use Cases</div>
+    </a>
+    <a href="/use-cases/social-mentor" class="block px-4 py-3 hover:bg-[rgba(164,208,55,0.1)] transition-colors border-b border-gray-800">
+      <div class="font-semibold text-white">📱 AI Social Media Mentor</div>
+      <div class="text-xs text-gray-400 mt-1">Social Media Growth Use Cases</div>
+    </a>
+    <a href="/use-cases/custom-systems" class="block px-4 py-3 hover:bg-[rgba(164,208,55,0.1)] transition-colors rounded-b-xl">
+      <div class="font-semibold text-white">⚙️ Custom AI Systems</div>
+      <div class="text-xs text-gray-400 mt-1">AI System Use Cases</div>
+    </a>
+  </div>
+</div>
+
+  <a href="#contact" class="btn-primary">Get Started</a>
+</div>
 
         <!-- Mobile Menu Button -->
         <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
