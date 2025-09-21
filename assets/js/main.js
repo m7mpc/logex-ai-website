@@ -49,11 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Contact form
-  document.getElementById('contact-form').addEventListener('submit', e => {
-    e.preventDefault();
-    alert("Thank you! We'll contact you within 24 hours.");
-    e.target.reset();
-  });
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+      alert("Thank you! We'll contact you within 24 hours.");
+      e.target.reset();
+    });
+  }
 
   // Initialize Particles
   initializeParticles();
@@ -119,27 +122,127 @@ function initializeParticles() {
   }
 }
 
+// Toggle Package Details (for the pricing section)
+function togglePackageDetails(packageId) {
+  const details = document.getElementById(packageId + '-details');
+  const arrow = document.getElementById(packageId + '-arrow');
+  
+  if (details && arrow) {
+    if (details.classList.contains('hidden')) {
+      details.classList.remove('hidden');
+      arrow.style.transform = 'rotate(180deg)';
+    } else {
+      details.classList.add('hidden');
+      arrow.style.transform = 'rotate(0deg)';
+    }
+  }
+}
+
 // Helper Functions
 function selectService(type) {
+  const contactSection = document.getElementById('contact');
   const sel = document.querySelector('select[name="service"]');
-  sel.value = type === 'agency' ? 'lead-generation' : 'customer-assistant';
-  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  
+  if (sel) {
+    if (type === 'ragbot') {
+      sel.value = 'adaptive-rag-assistant';
+    } else if (type === 'social') {
+      sel.value = 'ai-social-media-mentor';
+    } else if (type === 'operations') {
+      sel.value = 'custom-ai-systems';
+    }
+  }
+  
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 function scrollToContact() {
-  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 function scrollToServices() {
-  document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+  const servicesSection = document.getElementById('services');
+  if (servicesSection) {
+    servicesSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+// Add this function to handle the new service details toggle
+function toggleServiceDetails(service) {
+  const details = document.getElementById(`${service}-details`);
+  const arrow = document.getElementById(`${service}-arrow`);
+  
+  if (details && arrow) {
+    if (details.classList.contains('hidden')) {
+      details.classList.remove('hidden');
+      arrow.style.transform = 'rotate(180deg)';
+    } else {
+      details.classList.add('hidden');
+      arrow.style.transform = 'rotate(0deg)';
+    }
+  }
 }
 
 function toggleFAQ(index) {
   const faqItems = document.querySelectorAll('.glass.rounded-2xl.overflow-hidden');
-  const item = faqItems[index];
-  const content = item.querySelector('.faq-content');
-  const icon = item.querySelector('.faq-icon');
+  if (faqItems[index]) {
+    const item = faqItems[index];
+    const content = item.querySelector('.faq-content');
+    const icon = item.querySelector('.faq-icon');
 
-  content.classList.toggle('hidden');
-  icon.classList.toggle('rotate-180');
+    if (content && icon) {
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+  }
 }
+
+// Lead Form Submission Handler (for use case demo pages)
+function handleLeadFormSubmit(event) {
+  event.preventDefault();
+  
+  const form = event.target;
+  const formData = new FormData(form);
+  
+  // In production, this would send data to your server
+  console.log('Form submission data:', Object.fromEntries(formData));
+  
+  // Show success message
+  alert('Demo submission received! In production, this would send your request to our AI system and you would receive an Excel sheet with extracted leads via email.');
+  
+  // Reset form
+  form.reset();
+  
+  return false;
+}
+
+// Initialize lead forms on use case pages
+document.addEventListener('DOMContentLoaded', () => {
+  const leadForm = document.getElementById('leadForm');
+  if (leadForm) {
+    leadForm.addEventListener('submit', handleLeadFormSubmit);
+  }
+});
+
+// Scroll to categories (for use-cases index page)
+function scrollToCategories() {
+  const categoriesSection = document.querySelector('section:nth-of-type(2)');
+  if (categoriesSection) {
+    categoriesSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+// Export functions for global use
+window.togglePackageDetails = togglePackageDetails;
+window.selectService = selectService;
+window.scrollToContact = scrollToContact;
+window.scrollToServices = scrollToServices;
+window.toggleServiceDetails = toggleServiceDetails;
+window.toggleFAQ = toggleFAQ;
+window.handleLeadFormSubmit = handleLeadFormSubmit;
+window.scrollToCategories = scrollToCategories;

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Primary Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Lead Extraction System | Custom AI Use Case | LogexAI</title>
+  <meta name="description" content="Transform event websites into lead goldmines. AI-powered system extracts 500+ leads per day with complete contact information. Try our live demo.">
+  <meta name="keywords" content="event lead generation, AI lead extraction, automated sponsor detection, B2B lead generation">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Event Lead Extraction System | LogexAI">
+  <meta property="og:description" content="From 50 to 500+ leads per day. See how AI transforms event data collection.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+<body>
+  <!-- Background -->
+  <div class="gradient-bg"></div>
+  <div class="grid-pattern"></div>
+
+  <!-- Progress Bar -->
+  <div class="fixed top-0 left-0 w-full h-1 bg-gray-900 z-50">
+    <div id="progress-bar" class="h-full" style="background: var(--logex-lime);"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed w-full z-40 transition nav-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="/" class="flex items-center">
+            <img src="../../../assets/images/logobig.svg" alt="LogexAI" class="h-12 w-auto">
+          </a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
+          <a href="/#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
+          <a href="/use-cases" class="text-gray-300 hover:text-white transition-colors">Use Cases</a>
+          <a href="/use-cases/custom-systems" class="text-white transition-colors">Custom Systems</a>
+          <a href="/#contact" class="btn-primary">Get Started</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div id="mobile-menu" class="hidden lg:hidden glass-dark p-6 space-y-4">
+      <a href="/" class="block hover:text-[var(--logex-lime)]">Home</a>
+      <a href="/#services" class="block hover:text-[var(--logex-lime)]">Services</a>
+      <a href="/use-cases" class="block hover:text-[var(--logex-lime)]">Use Cases</a>
+      <a href="/use-cases/custom-systems" class="block text-[var(--logex-lime)]">Custom Systems</a>
+      <a href="/#contact" class="block btn-primary text-center">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="pt-24 px-4">
+    <div class="max-w-7xl mx-auto">
+      <nav class="flex items-center text-sm text-gray-400">
+        <a href="/" class="hover:text-white transition">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/use-cases" class="hover:text-white transition">Use Cases</a>
+        <span class="mx-2">/</span>
+        <a href="/use-cases/custom-systems" class="hover:text-white transition">Custom Systems</a>
+        <span class="mx-2">/</span>
+        <span class="text-[var(--logex-lime)]">Event Lead Extraction</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="pt-12 pb-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="glass-dark p-12 rounded-3xl text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background: linear-gradient(135deg, var(--logex-lime), transparent);"></div>
+        <div class="relative z-10">
+          <div class="inline-flex items-center px-4 py-2 rounded-full text-sm mb-6" style="background: rgba(164,208,55,0.2); color: var(--logex-lime);">
+            <span class="mr-2">🎯</span>
+            AI-POWERED LEAD GENERATION
+          </div>
+          
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-jakarta font-bold mb-6 leading-tight">
+            Event Lead <span class="lime-gradient-text">Extraction System</span>
+          </h1>
+          
+          <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
+            Transform any event website into a goldmine of qualified leads—automatically extract sponsors, find decision-makers, and get instant Excel reports.
+          </p>
+
+          <!-- Key Metrics -->
+          <div class="max-w-3xl mx-auto grid grid-cols-3 gap-6">
+            <div class="glass p-4 rounded-xl">
+              <p class="text-3xl font-bold" style="color: var(--logex-lime);">500+</p>
+              <p class="text-xs text-gray-400">Leads/Day</p>
+            </div>
+            <div class="glass p-4 rounded-xl">
+              <p class="text-3xl font-bold" style="color: var(--logex-lime);">95%</p>
+              <p class="text-xs text-gray-400">Time Saved</p>
+            </div>
+            <div class="glass p-4 rounded-xl">
+              <p class="text-3xl font-bold" style="color: var(--logex-lime);">Instant</p>
+              <p class="text-xs text-gray-400">Excel Export</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Try It Now Section -->
+  <section class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="glass-dark p-8 rounded-3xl border-2 border-[var(--logex-lime)]/30 relative">
+        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+          <span class="px-6 py-2 text-sm font-bold rounded-full" style="background: linear-gradient(135deg, var(--logex-lime), var(--logex-lime-dark)); color: var(--logex-dark);">
+            ⚡ LIVE DEMO - TRY NOW
+          </span>
+        </div>
+
+        <div class="text-center mb-8 mt-4">
+          <h2 class="text-3xl font-jakarta font-bold mb-4">
+            Get Your Event Leads <span class="lime-gradient-text">Instantly</span>
+          </h2>
+          <p class="text-gray-400">
+            Submit your event link and receive a complete Excel sheet with all extracted leads sent directly to your email!
+          </p>
+        </div>
+
+        <form id="leadForm" class="space-y-5">
+          <div>
+            <label class="block text-sm font-medium mb-2 text-[var(--logex-lime)]">
+              🔗 Event Website URL
+            </label>
+            <input 
+              type="url" 
+              name="eventUrl"
+              required
+              placeholder="https://example-event.com" 
+              class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:border-[var(--logex-lime)] focus:outline-none transition"
+            >
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-sm font-medium mb-2 text-[var(--logex-lime)]">
+                📧 Your Email (for instant delivery)
+              </label>
+              <input 
+                type="email" 
+                name="email"
+                required
+                placeholder="your.email@company.com" 
+                class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:border-[var(--logex-lime)] focus:outline-none transition"
+              >
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-2 text-[var(--logex-lime)]">
+                📱 Phone Number
+              </label>
+              <input 
+                type="tel" 
+                name="phone"
+                required
+                placeholder="+1234567890" 
+                class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:border-[var(--logex-lime)] focus:outline-none transition"
+              >
+            </div>
+          </div>
+
+          <button type="submit" class="w-full btn-primary text-lg py-4">
+            ⚡ Get Instant Excel Sheet →
+          </button>
+        </form>
+
+        <div class="mt-6 p-4 rounded-xl" style="background: rgba(164,208,55,0.1); border: 1px solid rgba(164,208,55,0.3);">
+          <p class="text-sm text-gray-300">
+            <span style="color: var(--logex-lime);">⚡ Instant Delivery:</span> Our AI processes your event link immediately, extracting all sponsors/partners, finding decision-makers with complete contact details, and sending you a ready-to-use Excel sheet within seconds.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem Section -->
+  <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center px-4 py-2 rounded-full text-sm mb-4" style="background: rgba(255,0,0,0.2); color: #ff6b6b;">
+          <span class="mr-2">🔍</span>
+          THE CHALLENGE
+        </div>
+        <h2 class="text-3xl md:text-4xl font-jakarta font-bold mb-4">
+          Manual Processes <span style="color: #ff6b6b;">Killing Growth</span>
+        </h2>
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+          Teams spending 15-20 minutes per lead, limited to 40-50 leads daily with incomplete data
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass p-6 rounded-2xl border border-red-900/30 reveal">
+          <div class="text-3xl mb-4">😩</div>
+          <h3 class="text-lg font-bold mb-2" style="color: #ff6b6b;">Team Burnout</h3>
+          <p class="text-sm text-gray-400">Repetitive manual tasks draining energy and motivation</p>
+        </div>
+        <div class="glass p-6 rounded-2xl border border-red-900/30 reveal">
+          <div class="text-3xl mb-4">🐌</div>
+          <h3 class="text-lg font-bold mb-2" style="color: #ff6b6b;">Slow Outreach</h3>
+          <p class="text-sm text-gray-400">Lead collection delays missing timely opportunities</p>
+        </div>
+        <div class="glass p-6 rounded-2xl border border-red-900/30 reveal">
+          <div class="text-3xl mb-4">📉</div>
+          <h3 class="text-lg font-bold mb-2" style="color: #ff6b6b;">Unscalable Process</h3>
+          <p class="text-sm text-gray-400">Can't increase output without more manpower</p>
+        </div>
+        <div class="glass p-6 rounded-2xl border border-red-900/30 reveal">
+          <div class="text-3xl mb-4">❌</div>
+          <h3 class="text-lg font-bold mb-2" style="color: #ff6b6b;">Poor Data Quality</h3>
+          <p class="text-sm text-gray-400">Incomplete leads, missing decision-maker contacts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manual Process Timeline -->
+  <section class="py-16 px-4 bg-gradient-to-b from-transparent via-[rgba(255,0,0,0.02)] to-transparent">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-jakarta font-bold mb-4">
+          The Old <span style="color: #ff6b6b;">Manual Process</span>
+        </h2>
+        <p class="text-lg text-gray-400">6 tedious steps taking 15-20 minutes per lead</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="glass p-4 rounded-xl text-center reveal">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3" style="background: rgba(255,0,0,0.2); color: #ff6b6b; font-weight: bold;">1</div>
+          <div class="text-2xl mb-2">🌐</div>
+          <p class="text-xs font-semibold">Visit Events</p>
+          <p class="text-xs text-gray-500">Navigate manually</p>
+        </div>
+        <div class="glass p-4 rounded-xl text-center reveal">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3" style="background: rgba(255,0,0,0.2); color: #ff6b6b; font-weight: bold;">2</div>
+          <div class="text-2xl mb-2">🔎</div>
+          <p class="text-xs font-semibold">Find Sponsors</p>
+          <p class="text-xs text-gray-500">Locate on page</p>
+        </div>
+        <div class="glass p-4 rounded-xl text-center reveal">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3" style="background: rgba(255,0,0,0.2); color: #ff6b6b; font-weight: bold;">3</div>
+          <div class="text-2xl mb-2">🏢</div>
+          <p class="text-xs font-semibold">Visit Companies</p>
+          <p class="text-xs text-gray-500">Check each site</p>
+        </div>
+        <div class="glass p-4 rounded-xl text-center reveal">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3" style="background: rgba(255,0,0,0.2); color: #ff6b6b; font-weight: bold;">4</div>
+          <div class="text-2xl mb-2">💼</div>
+          <p class="text-xs font-semibold">Search LinkedIn</p>
+          <p class="text-xs text-gray-500">Find profiles</p>
+        </div>
+        <div class="glass p-4 rounded-xl text-center reveal">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3" style="background: rgba(255,0,0,0.2); color: #ff6b6b; font-weight: bold;">5</div>
+          <div class="text-2xl mb-2">📧</div>
+          <p class="text-xs font-semibold">Collect Contacts</p>
+          <p class="text-xs text-gray-500">Emails, phones</p>
+        </div>
+        <div class="glass p-4 rounded-xl text-center reveal">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3" style="background: rgba(255,0,0,0.2); color: #ff6b6b; font-weight: bold;">6</div>
+          <div class="text-2xl mb-2">📊</div>
+          <p class="text-xs font-semibold">Data Entry</p>
+          <p class="text-xs text-gray-500">Manual input</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Solution Section -->
+  <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center px-4 py-2 rounded-full text-sm mb-4" style="background: rgba(164,208,55,0.2); color: var(--logex-lime);">
+          <span class="mr-2">🚀</span>
+          THE SOLUTION
+        </div>
+        <h2 class="text-3xl md:text-4xl font-jakarta font-bold mb-4">
+          Our <span class="lime-gradient-text">AI-Powered System</span>
+        </h2>
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+          Automated workflow that replicates the entire process—faster, smarter, and at scale
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass p-6 rounded-2xl reveal card-hover">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4 text-2xl" style="background: rgba(164,208,55,0.2);">
+            🤖
+          </div>
+          <h3 class="text-lg font-bold mb-3 text-[var(--logex-lime)]">Automated Detection</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Accepts event links via Telegram/WhatsApp</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Auto-identifies company names</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>AI reads text and images</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass p-6 rounded-2xl reveal card-hover">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4 text-2xl" style="background: rgba(164,208,55,0.2);">
+            🎯
+          </div>
+          <h3 class="text-lg font-bold mb-3 text-[var(--logex-lime)]">Smart Processing</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Cleans data automatically</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Removes duplicates</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Validates information</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass p-6 rounded-2xl reveal card-hover">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4 text-2xl" style="background: rgba(164,208,55,0.2);">
+            📱
+          </div>
+          <h3 class="text-lg font-bold mb-3 text-[var(--logex-lime)]">Contact Enrichment</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Finds decision makers</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Collects emails & phones</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Links LinkedIn profiles</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass p-6 rounded-2xl reveal card-hover">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4 text-2xl" style="background: rgba(164,208,55,0.2);">
+            📊
+          </div>
+          <h3 class="text-lg font-bold mb-3 text-[var(--logex-lime)]">Seamless Export</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Direct CRM integration</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Structured datasets</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Instant Excel export</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <section class="py-16 px-4 bg-gradient-to-b from-transparent via-[rgba(164,208,55,0.02)] to-transparent">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center px-4 py-2 rounded-full text-sm mb-4" style="background: rgba(164,208,55,0.2); color: var(--logex-lime);">
+          <span class="mr-2">📈</span>
+          PROVEN RESULTS
+        </div>
+        <h2 class="text-3xl md:text-4xl font-jakarta font-bold mb-4">
+          Impact & <span class="lime-gradient-text">Transformation</span>
+        </h2>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="glass-dark p-8 rounded-3xl border border-[var(--logex-lime)]/30">
+          <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <p class="text-5xl font-bold mb-2" style="color: var(--logex-lime);">500+</p>
+              <p class="text-lg font-semibold mb-1">Leads Per Day</p>
+              <p class="text-sm text-gray-400">vs 40-50 manually</p>
+            </div>
+            <div>
+              <p class="text-5xl font-bold mb-2" style="color: var(--logex-lime);">95%</p>
+              <p class="text-lg font-semibold mb-1">Time Saved</p>
+              <p class="text-sm text-gray-400">From hours to seconds</p>
+            </div>
+            <div>
+              <p class="text-5xl font-bold mb-2" style="color: var(--logex-lime);">24/7</p>
+              <p class="text-lg font-semibold mb-1">Operation</p>
+              <p class="text-sm text-gray-400">Never miss an opportunity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="glass-dark p-12 rounded-3xl text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background: linear-gradient(135deg, var(--logex-lime), transparent);"></div>
+        <div class="relative z-10">
+          <h2 class="text-4xl md:text-5xl font-jakarta font-bold mb-6">
+            Ready to <span class="lime-gradient-text">Scale Your Business?</span>
+          </h2>
+          <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Let's build smart systems that do the work for you—24/7. Free your team from repetitive tasks and focus on growth.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/#contact" class="btn-primary text-lg">
+              Build Your System →
+            </a>
+            <a href="/use-cases/custom-systems" class="btn-secondary text-lg">
+              Explore More Use Cases
+            </a>
+          </div>
+          <div class="mt-8 flex justify-center space-x-6 text-sm text-gray-400">
+            <a href="mailto:hello@logexai.com" class="hover:text-[var(--logex-lime)] transition">
+              📧 hello@logexai.com
+            </a>
+            <a href="https://www.logexai.com" class="hover:text-[var(--logex-lime)] transition">
+              🌐 www.logexai.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-4 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto text-center">
+      <div class="flex items-center justify-center mb-8">
+        <img src="../../../assets/images/logobig.svg" alt="LogexAI" class="h-10 w-auto md:h-14">
+      </div>
+      <p class="text-gray-400 mb-2 text-lg">WHERE LOGIC MEETS EXECUTION</p>
+      <p class="text-gray-500 mb-6">AI automation that transforms how you work</p>
+      <div class="flex justify-center space-x-6 text-sm text-gray-400 mb-6">
+        <a href="/" class="hover:text-[var(--logex-lime)] transition">Home</a>
+        <a href="/use-cases" class="hover:text-[var(--logex-lime)] transition">All Use Cases</a>
+        <a href="/use-cases/custom-systems" class="hover:text-[var(--logex-lime)] transition">Custom Systems</a>
+      </div>
+      <p class="text-sm text-gray-500">© 2025 LogexAI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../../../assets/js/main.js"></script>
+
+</body>
+</html>
