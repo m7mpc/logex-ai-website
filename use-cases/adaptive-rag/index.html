@@ -4,15 +4,14 @@
   <!-- Primary Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LogexAI | Where Logic Meets Execution</title>
-  <meta name="description" content="Where logic meets execution to maximize efficiency and growth. We help businesses grow with AI-powered lead discovery, tailored insights, and high-converting mechanisms.">
-  <meta name="keywords" content="AI lead generation, business insights, client acquisition, conversion optimization, LogexAI">
+  <title>Adaptive RAG Assistant Use Cases | LogexAI</title>
+  <meta name="description" content="24/7 intelligent AI assistants powered by RAG technology. Capture leads, provide support, and book appointments automatically.">
+  <meta name="keywords" content="RAG assistant, AI chatbot, lead capture, customer support, appointment booking">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="LogexAI | Where Logic Meets Execution">
-  <meta property="og:description" content="Smarter, faster, and more effective client acquisition with AI-powered insights">
-  <meta property="og:image" content="./assets/og/og-image.jpg">
+  <meta property="og:title" content="Adaptive RAG Assistant Use Cases | LogexAI">
+  <meta property="og:description" content="AI that adapts to your business knowledge and handles customer interactions 24/7">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +22,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 <body>
   <!-- Background -->
@@ -41,45 +40,19 @@
       <div class="flex justify-between items-center h-20">
         <!-- Logo -->
         <div class="flex items-center">
-          <a href="#" class="flex items-center">
-            <img src="./assets/images/logobig.svg" alt="LogexAI" class="h-12 w-auto">
+          <a href="/" class="flex items-center">
+            <img src="../../assets/images/logobig.svg" alt="LogexAI" class="h-12 w-auto">
           </a>
         </div>
+        
         <!-- Desktop Navigation -->
-<div class="hidden lg:flex items-center space-x-8">
-  <a href="#home" class="text-gray-300 hover:text-white transition-colors">Home</a>
-  <a href="#benefits" class="text-gray-300 hover:text-white transition-colors">Why LogexAI</a>
-<!--  <a href="#how-it-works" class="text-gray-300 hover:text-white transition-colors">How It Works</a>-->
-  <a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
-
-  <!-- Use Cases Dropdown -->
-<div class="relative group">
-  <button class="text-gray-300 hover:text-white transition-colors flex items-center">
-    Use Cases
-    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </button>
-  <div class="absolute left-0 mt-2 w-64 rounded-xl glass-dark border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-    <a href="/use-cases/adaptive-rag" class="block px-4 py-3 hover:bg-[rgba(164,208,55,0.1)] transition-colors border-b border-gray-800">
-<div class="font-semibold text-white">🤖 Adaptive RAG Assistant</div>
-<div class="text-xs text-gray-400 mt-1">Explore Use Cases</div>
-    </a>
-    <a href="/use-cases/social-mentor" class="block px-4 py-3 hover:bg-[rgba(164,208,55,0.1)] transition-colors border-b border-gray-800">
-<div class="font-semibold text-white">📱 AI Social Media Mentor</div>
-<div class="text-xs text-gray-400 mt-1">Social Media Growth Use Cases</div>
-
-    </a>
-    <a href="/use-cases/custom-systems" class="block px-4 py-3 hover:bg-[rgba(164,208,55,0.1)] transition-colors rounded-b-xl">
-<div class="font-semibold text-white">⚙️ Custom AI Systems</div>
-<div class="text-xs text-gray-400 mt-1">AI System Use Cases</div>
-
-    </a>
-  </div>
-</div>
-
-  <a href="#contact" class="btn-primary">Get Started</a>
-</div>
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
+          <a href="/#benefits" class="text-gray-300 hover:text-white transition-colors">Why LogexAI</a>
+          <a href="/#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
+          <a href="/use-cases" class="text-white transition-colors">Use Cases</a>
+          <a href="/#contact" class="btn-primary">Get Started</a>
+        </div>
 
         <!-- Mobile Menu Button -->
         <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
@@ -89,744 +62,368 @@
         </button>
       </div>
     </div>
+    
     <div id="mobile-menu" class="hidden lg:hidden glass-dark p-6 space-y-4">
-      <a href="#home" class="block hover:text-[var(--logex-lime)]">Home</a>
-      <a href="#benefits" class="block hover:text-[var(--logex-lime)]">Why LogexAI</a>
-      <a href="#services" class="block hover:text-[var(--logex-lime)]">Services</a>
-<!--  <a href="#how-it-works" class="block hover:text-[var(&#45;&#45;logex-lime)]">How It Works</a>-->
-      <a href="#case-studies" class="block hover:text-[var(--logex-lime)]">Case Studies</a>
-      <a href="#contact" class="block btn-primary text-center">Get Started</a>
+      <a href="/" class="block hover:text-[var(--logex-lime)]">Home</a>
+      <a href="/#benefits" class="block hover:text-[var(--logex-lime)]">Why LogexAI</a>
+      <a href="/#services" class="block hover:text-[var(--logex-lime)]">Services</a>
+      <a href="/use-cases" class="block text-[var(--logex-lime)]">Use Cases</a>
+      <a href="/#contact" class="block btn-primary text-center">Get Started</a>
     </div>
   </nav>
 
-<!-- Hero Section -->
-<section id="home" class="min-h-screen flex flex-col justify-center items-center pt-28 px-4 text-center">  <div class="max-w-3xl">
-<div class="inline-flex items-center px-4 py-2 rounded-full text-sm mb-12" style="background: rgba(164,208,55,0.2); color: var(--logex-lime); animation: pulseGlow 2s ease infinite;">      <span class="mr-2">🚀</span>
-      WHERE LOGIC MEETS EXECUTION
-    </div>
-<h1 class="text-5xl md:text-6xl lg:text-7xl font-jakarta font-bold mb-6 leading-tight floating-smooth">
-  Build <span class="animated-gradient-text">Smarter</span>.<br>
-  Grow <span class="animated-gradient-text">Faster</span>.
-</h1>
-    <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">
-
-  Adaptive RAG bots, social growth mentors, custom automation—AI solutions that transform how you work.
-  </p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-      <a href="#services" class="btn-primary text-lg">Explore AI Solutions →</a>
-      <button onclick="scrollToContact()" class="btn-secondary text-lg">💬 Try Live Demo</button>
+  <!-- Breadcrumb -->
+  <div class="pt-24 px-4">
+    <div class="max-w-7xl mx-auto">
+      <nav class="flex items-center text-sm text-gray-400">
+        <a href="/" class="hover:text-white transition">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/use-cases" class="hover:text-white transition">Use Cases</a>
+        <span class="mx-2">/</span>
+        <span class="text-[var(--logex-lime)]">Adaptive RAG Assistant</span>
+      </nav>
     </div>
   </div>
 
-  <!-- Floating Decorations -->
-  <div class="absolute top-20 left-10 w-20 h-20 rounded-full blur-xl floating" style="background: rgba(164,208,55,0.2);"></div>
-  <div class="absolute bottom-20 right-10 w-32 h-32 rounded-full blur-xl floating" style="background: rgba(164,208,55,0.1);"></div>
-</section>
-
-<!--  &lt;!&ndash; How It Works Section &ndash;&gt;-->
-<!--  <section id="how-it-works" class="py-15 px-4">-->
-<!--    <div class="max-w-7xl mx-auto">-->
-<!--      <div class="text-center mb-16 reveal">-->
-<!--        <h2 class="text-4xl md:text-5xl font-bold font-jakarta mb-4">-->
-<!--          Our <span class="lime-gradient-text">Proven Process</span>-->
-<!--        </h2>-->
-<!--        <p class="text-xl text-gray-400 max-w-2xl mx-auto">-->
-<!--          From discovery to conversion—a complete system for measurable growth-->
-<!--        </p>-->
-<!--      </div>-->
-
-<!--      <div class="grid md:grid-cols-3 gap-8">-->
-<!--        &lt;!&ndash; Step 1 &ndash;&gt;-->
-<!--        <div class="relative reveal">-->
-<!--          <div class="glass p-8 rounded-3xl card-hover h-full flex flex-col">-->
-<!--            <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[var(&#45;&#45;logex-lime)] to-[var(&#45;&#45;logex-lime-dark)] rounded-full flex items-center justify-center font-bold text-xl text-[var(&#45;&#45;logex-dark)]">-->
-<!--              1-->
-<!--            </div>-->
-<!--            <div class="text-6xl mb-6">🔍</div>-->
-<!--            <h3 class="text-2xl font-bold mb-4">Lead Discovery</h3>-->
-<!--            <p class="text-gray-400 mb-6">-->
-<!--              We identify the right businesses and decision-makers that fit your goals perfectly.-->
-<!--            </p>-->
-<!--            <div class="space-y-4 flex-grow">-->
-<!--              <div>-->
-<!--                <h4 class="text-sm font-semibold text-gray-300 mb-2">AI-powered identification:</h4>-->
-<!--                <ul class="space-y-1 text-sm text-gray-500">-->
-<!--                  <li>• Target businesses that match your criteria</li>-->
-<!--                  <li>• Verified decision-maker contacts</li>-->
-<!--                  <li>• Automated workflows save time</li>-->
-<!--                  <li>• Quality over quantity approach</li>-->
-<!--                </ul>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-4xl" style="color: var(&#45;&#45;logex-lime);">-->
-<!--            →-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        &lt;!&ndash; Step 2 &ndash;&gt;-->
-<!--        <div class="relative reveal" style="animation-delay: 0.1s;">-->
-<!--          <div class="glass p-8 rounded-3xl card-hover h-full flex flex-col">-->
-<!--            <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[var(&#45;&#45;logex-lime)] to-[var(&#45;&#45;logex-lime-dark)] rounded-full flex items-center justify-center font-bold text-xl text-[var(&#45;&#45;logex-dark)]">-->
-<!--              2-->
-<!--            </div>-->
-<!--            <div class="text-6xl mb-6">📊</div>-->
-<!--            <h3 class="text-2xl font-bold mb-4">Business Insights</h3>-->
-<!--            <p class="text-gray-400 mb-6">-->
-<!--              Each lead comes with customized reports outlining their challenges and opportunities.-->
-<!--            </p>-->
-<!--            <div class="space-y-4 flex-grow">-->
-<!--              <div>-->
-<!--                <h4 class="text-sm font-semibold text-gray-300 mb-2">Tailored intelligence:</h4>-->
-<!--                <ul class="space-y-1 text-sm text-gray-500">-->
-<!--                  <li>• Business challenges identified</li>-->
-<!--                  <li>• Growth opportunities mapped</li>-->
-<!--                  <li>• Context before outreach</li>-->
-<!--                  <li>• Positioning strategies included</li>-->
-<!--                </ul>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-4xl" style="color: var(&#45;&#45;logex-lime);">-->
-<!--            →-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        &lt;!&ndash; Step 3 &ndash;&gt;-->
-<!--        <div class="relative reveal" style="animation-delay: 0.2s;">-->
-<!--          <div class="glass p-8 rounded-3xl card-hover h-full flex flex-col">-->
-<!--            <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[var(&#45;&#45;logex-lime)] to-[var(&#45;&#45;logex-lime-dark)] rounded-full flex items-center justify-center font-bold text-xl text-[var(&#45;&#45;logex-dark)]">-->
-<!--              3-->
-<!--            </div>-->
-<!--            <div class="text-6xl mb-6">🎯</div>-->
-<!--            <h3 class="text-2xl font-bold mb-4">High-Converting Mechanism</h3>-->
-<!--            <p class="text-gray-400 mb-6">-->
-<!--              Conversion-ready communication system designed from insights for maximum response.-->
-<!--            </p>-->
-<!--            <div class="space-y-4 flex-grow">-->
-<!--              <div>-->
-<!--                <h4 class="text-sm font-semibold text-gray-300 mb-2">Result-driven approach:</h4>-->
-<!--                <ul class="space-y-1 text-sm text-gray-500">-->
-<!--                  <li>• Personalized messaging aligned with needs</li>-->
-<!--                  <li>• Structured flow for engagement</li>-->
-<!--                  <li>• Trust-building touchpoints</li>-->
-<!--                  <li>• Clear solution positioning</li>-->
-<!--                </ul>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-
-  <!-- Benefits -->
-<section id="benefits" class="py-20 px-4">
-  <div class="max-w-7xl mx-auto text-center mb-16">
-    <h2 class="text-4xl md:text-5xl font-jakarta font-bold mb-4">
-      Why Choose <span class="lime-gradient-text">LogexAI</span>
-    </h2>
-    <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-      Let AI do the heavy lifting while you focus on what matters—growing your business.
-    </p>
-  </div>
-  <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="glass p-6 rounded-2xl reveal card-hover">
-      <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-4 text-5xl" style="background: rgba(164,208,55,0.2);">🤖</div>
-      <h3 class="font-bold mb-2 text-lg">24/7 AI That Never Stops</h3>
-      <p class="text-sm text-gray-400">RAG-powered assistants capture leads, book appointments, and support customers around the clock.</p>
-    </div>
-    <div class="glass p-6 rounded-2xl reveal card-hover">
-      <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-4 text-5xl" style="background: rgba(164,208,55,0.2);">📱</div>
-      <h3 class="font-bold mb-2 text-lg">Your Personal Growth Mentor</h3>
-      <p class="text-sm text-gray-400">AI guides you step-by-step on social media—what to post, who to engage, when to connect.</p>
-    </div>
-    <div class="glass p-6 rounded-2xl reveal card-hover">
-      <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-4 text-5xl" style="background: rgba(164,208,55,0.2);">⚙️</div>
-      <h3 class="font-bold mb-2 text-lg">Custom Systems Built for You</h3>
-      <p class="text-sm text-gray-400">Transform repetitive tasks into smart workflows that run automatically, freeing your team.</p>
-    </div>
-    <div class="glass p-6 rounded-2xl reveal card-hover">
-      <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-4 text-5xl" style="background: rgba(164,208,55,0.2);">⚡</div>
-      <h3 class="font-bold mb-2 text-lg">From Hours to Seconds</h3>
-<p class="text-sm text-gray-400">Complete tasks in seconds that used to take hours—automated workflows deliver instant results.</p>    </div>
-    <div class="glass p-6 rounded-2xl reveal card-hover">
-      <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-4 text-5xl" style="background: rgba(164,208,55,0.2);">🎯</div>
-      <h3 class="font-bold mb-2 text-lg">Proven & Ready to Deploy</h3>
-      <p class="text-sm text-gray-400">Live demos you can try instantly—see real results before you commit.</p>
-    </div>
-    <div class="glass p-6 rounded-2xl reveal card-hover">
-      <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-4 text-5xl" style="background: rgba(164,208,55,0.2);">🚀</div>
-      <h3 class="font-bold mb-2 text-lg">Focus on Growth, Not Grind</h3>
-      <p class="text-sm text-gray-400">Stop drowning in manual work. Let AI handle the repetitive tasks while you scale.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Services Section -->
-<section id="services" class="py-20 px-4 relative">
-  <!-- Background accent -->
-  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(164,208,55,0.03)] to-transparent"></div>
-
-  <div class="max-w-7xl mx-auto relative z-10">
-    <div class="text-center mb-16 reveal">
-      <div class="inline-flex items-center px-4 py-2 rounded-full text-sm mb-4" style="background: rgba(164,208,55,0.2); color: var(--logex-lime);">
-        <span class="mr-2">⚡</span>
-        AI AUTOMATION SOLUTIONS
-      </div>
-      <h2 class="text-4xl md:text-5xl font-jakarta font-bold mb-4">
-        Transform Your Business with <span class="lime-gradient-text">AI Automation</span>
-      </h2>
-      <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-        Enterprise-grade AI solutions that automate customer engagement, social growth, and business operations
-      </p>
-    </div>
-
-    <div class="grid lg:grid-cols-3 gap-8">
-      <!-- RAG Bot Solution -->
-<div class="group relative reveal">
-  <div class="absolute inset-0 bg-gradient-to-r from-[var(--logex-lime)] to-[var(--logex-lime-dark)] opacity-0 group-hover:opacity-10 blur-xl transition-all duration-500"></div>
-
-  <div class="relative h-full bg-gradient-to-br from-gray-900/80 to-gray-800/80 p-8 rounded-3xl border border-gray-700 group-hover:border-[var(--logex-lime)]/50 transition-all duration-300 flex flex-col">
-    <!-- Header -->
-    <div class="mb-6">
-      <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mb-3" style="background: rgba(164,208,55,0.2); color: var(--logex-lime); border: 1px solid rgba(164,208,55,0.3);">
-        <span class="mr-1.5">🤖</span>
+  <!-- Hero Section -->
+  <section class="pt-12 pb-20 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <div class="inline-flex items-center px-4 py-2 rounded-full text-sm mb-8" style="background: rgba(164,208,55,0.2); color: var(--logex-lime);">
+        <span class="mr-2">🤖</span>
         RAG-POWERED AI
-      </span>
-      <h3 class="text-2xl font-bold text-white mb-2">Adaptive RAG Assistant</h3>
-      <p class="text-gray-400 text-sm">AI bot powered by RAG technology that adapts to your needs — capturing leads, providing support, or booking appointments</p>
-    </div>
-
-    <!-- What You Get (Always Visible) -->
-    <div class="space-y-4 mb-6">
-      <h4 class="text-sm font-semibold text-[var(--logex-lime)] uppercase tracking-wider">Core Features:</h4>
-
-      <div class="space-y-3">
-        <div class="flex items-start">
-          <div class="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0" style="background: rgba(164,208,55,0.2);">
-            <span class="text-xs font-bold" style="color: var(--logex-lime);">1</span>
-          </div>
-          <div>
-            <h5 class="text-sm font-semibold text-white mb-1">Smart Lead Capture</h5>
-            <p class="text-xs text-gray-400">Intelligently identifies and captures leads from any conversation</p>
-          </div>
-        </div>
-
-        <div class="flex items-start">
-          <div class="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0" style="background: rgba(164,208,55,0.2);">
-            <span class="text-xs font-bold" style="color: var(--logex-lime);">2</span>
-          </div>
-          <div>
-            <h5 class="text-sm font-semibold text-white mb-1">Adaptive Support</h5>
-            <p class="text-xs text-gray-400">RAG technology enables context-aware customer support</p>
-          </div>
-        </div>
-
-        <div class="flex items-start">
-          <div class="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0" style="background: rgba(164,208,55,0.2);">
-            <span class="text-xs font-bold" style="color: var(--logex-lime);">3</span>
-          </div>
-          <div>
-            <h5 class="text-sm font-semibold text-white mb-1">Automated Booking</h5>
-            <p class="text-xs text-gray-400">Seamlessly schedules appointments while you focus on delivery</p>
-          </div>
-        </div>
       </div>
-    </div>
-
-    <!-- Expandable Details -->
-    <div class="mb-6">
-      <button onclick="toggleServiceDetails('ragbot')" class="w-full py-2 text-sm text-[var(--logex-lime)] hover:text-white transition flex items-center justify-center">
-        <span>See Full Details & Why It Matters</span>
-        <svg class="w-4 h-4 ml-2 transform transition-transform" id="ragbot-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-
-      <div id="ragbot-details" class="hidden mt-4 pt-4 border-t border-gray-700 space-y-4">
-        <div>
-          <h4 class="text-sm font-semibold text-gray-300 mb-2">Perfect For:</h4>
-          <ul class="space-y-1 text-xs text-gray-400">
-            <li>• Service-based businesses needing 24/7 availability</li>
-            <li>• Healthcare & professional services</li>
-            <li>• E-commerce & retail operations</li>
-            <li>• Any business wanting intelligent automation</li>
-          </ul>
-        </div>
-
-        <div class="p-4 rounded-xl bg-black/30 border border-gray-800">
-          <h4 class="text-sm font-bold text-[var(--logex-lime)] mb-2">💡 Why It Matters:</h4>
-          <p class="text-xs text-gray-300 leading-relaxed">
-            RAG technology ensures your AI adapts to YOUR business knowledge. It <strong class="text-white">learns from your data</strong>, understands your services, and handles complex inquiries. Whether capturing leads, supporting customers, or booking appointments—it works exactly how you need it to.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="mt-auto">
-      <button onclick="selectService('ragbot')" class="w-full py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center group/btn" style="background: linear-gradient(135deg, var(--logex-lime), var(--logex-lime-dark)); color: var(--logex-dark);">
-        Deploy Your RAG Assistant
-        <svg class="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-      <!-- Social Growth AI -->
-<div class="group relative reveal" style="animation-delay: 0.1s;">
-  <div class="absolute inset-0 bg-gradient-to-r from-[var(--logex-lime)] to-[var(--logex-lime-dark)] opacity-0 group-hover:opacity-10 blur-xl transition-all duration-500"></div>
-
-  <div class="relative h-full bg-gradient-to-br from-gray-900/80 to-gray-800/80 p-8 rounded-3xl border border-gray-700 group-hover:border-[var(--logex-lime)]/50 transition-all duration-300 flex flex-col">
-    <!-- Header -->
-    <div class="mb-6">
-      <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mb-3" style="background: rgba(164,208,55,0.2); color: var(--logex-lime); border: 1px solid rgba(164,208,55,0.3);">
-        <span class="mr-1.5">📱</span>
-        SOCIAL GROWTH MENTOR
-      </span>
-      <h3 class="text-2xl font-bold text-white mb-2">AI Social Media Mentor</h3>
-      <p class="text-gray-400 text-sm">Your personal instructor guiding you step-by-step — what to post, where to engage, who to connect with</p>
-    </div>
-
-    <!-- What You Get (Always Visible) -->
-    <div class="space-y-4 mb-6">
-      <h4 class="text-sm font-semibold text-[var(--logex-lime)] uppercase tracking-wider">Core Features:</h4>
-
-      <div class="space-y-3">
-        <div class="flex items-start">
-          <div class="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0" style="background: rgba(164,208,55,0.2);">
-            <span class="text-xs font-bold" style="color: var(--logex-lime);">1</span>
-          </div>
-          <div>
-            <h5 class="text-sm font-semibold text-white mb-1">Personalized Action Plans</h5>
-            <p class="text-xs text-gray-400">Daily tasks: "Comment on this reel", "DM this profile"</p>
-          </div>
-        </div>
-
-        <div class="flex items-start">
-          <div class="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0" style="background: rgba(164,208,55,0.2);">
-            <span class="text-xs font-bold" style="color: var(--logex-lime);">2</span>
-          </div>
-          <div>
-            <h5 class="text-sm font-semibold text-white mb-1">Strategic Guidance</h5>
-            <p class="text-xs text-gray-400">Tells you exactly what content to create and when to post</p>
-          </div>
-        </div>
-
-        <div class="flex items-start">
-          <div class="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0" style="background: rgba(164,208,55,0.2);">
-            <span class="text-xs font-bold" style="color: var(--logex-lime);">3</span>
-          </div>
-          <div>
-            <h5 class="text-sm font-semibold text-white mb-1">Connection Targeting</h5>
-            <p class="text-xs text-gray-400">Identifies who to connect with for maximum growth</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Expandable Details -->
-    <div class="mb-6">
-      <button onclick="toggleServiceDetails('social')" class="w-full py-2 text-sm text-[var(--logex-lime)] hover:text-white transition flex items-center justify-center">
-        <span>See Full Details & Why It Matters</span>
-        <svg class="w-4 h-4 ml-2 transform transition-transform" id="social-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-
-      <div id="social-details" class="hidden mt-4 pt-4 border-t border-gray-700 space-y-4">
-        <div>
-          <h4 class="text-sm font-semibold text-gray-300 mb-2">How It Works:</h4>
-          <ul class="space-y-1 text-xs text-gray-400">
-            <li>• AI analyzes your niche and target audience</li>
-            <li>• Creates custom growth strategy for YOUR brand</li>
-            <li>• Provides step-by-step daily action items</li>
-            <li>• Tells you exactly what to post and when</li>
-            <li>• Identifies profiles to engage with</li>
-            <li>• Tracks progress and adjusts strategy</li>
-          </ul>
-        </div>
-
-        <div class="p-4 rounded-xl bg-black/30 border border-gray-800">
-          <h4 class="text-sm font-bold text-[var(--logex-lime)] mb-2">💡 Why It Matters:</h4>
-          <p class="text-xs text-gray-300 leading-relaxed">
-            Stop guessing what works. Your AI mentor provides <strong class="text-white">proven growth strategies tailored for YOU</strong>. Every action is strategic—from which reel to comment on to which profile to DM. Build a strong presence with clear, actionable guidance every step of the way.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="mt-auto">
-      <button onclick="selectService('social')" class="w-full py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center group/btn border-2" style="border-color: var(--logex-lime); color: var(--logex-lime);">
-        Get Your AI Mentor
-        <svg class="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-      <!-- Operations AI -->
-<div class="group relative reveal" style="animation-delay: 0.2s;">
-  <div class="absolute inset-0 bg-gradient-to-r from-[var(--logex-lime)] to-[var(--logex-lime-dark)] opacity-0 group-hover:opacity-10 blur-xl transition-all duration-500"></div>
-
-  <div class="relative h-full bg-gradient-to-br from-gray-900/80 to-gray-800/80 p-8 rounded-3xl border-2 border-[var(--logex-lime)]/30 group-hover:border-[var(--logex-lime)]/60 transition-all duration-300 flex flex-col">
-    <!-- Premium Badge -->
-    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-      <span class="px-4 py-1 text-xs font-bold rounded-full" style="background: linear-gradient(135deg, var(--logex-lime), var(--logex-lime-dark)); color: var(--logex-dark);">
-        CUSTOM BUILT
-      </span>
-    </div>
-
-    <!-- Header -->
-    <div class="mb-6 mt-2">
-      <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mb-3" style="background: rgba(164,208,55,0.2); color: var(--logex-lime); border: 1px solid rgba(164,208,55,0.3);">
-        <span class="mr-1.5">⚙️</span>
-        BUSINESS AUTOMATION
-      </span>
-      <h3 class="text-2xl font-bold text-white mb-2">Custom AI Systems</h3>
-      <p class="text-gray-400 text-sm">Smart systems that work 24/7—free your team from repetitive tasks and focus on growth</p>
-    </div>
-
-    <!-- What You Get (Always Visible) -->
-    <div class="space-y-4 mb-6">
-      <h4 class="text-sm font-semibold text-[var(--logex-lime)] uppercase tracking-wider">What We Build:</h4>
-
-      <div class="space-y-3">
-        <div class="flex items-start">
-          <div class="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0" style="background: rgba(164,208,55,0.2);">
-            <span class="text-xs font-bold" style="color: var(--logex-lime);">1</span>
-          </div>
-          <div>
-            <h5 class="text-sm font-semibold text-white mb-1">Workflow Automation</h5>
-            <p class="text-xs text-gray-400">Turn manual processes into automated workflows</p>
-          </div>
-        </div>
-
-        <div class="flex items-start">
-          <div class="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0" style="background: rgba(164,208,55,0.2);">
-            <span class="text-xs font-bold" style="color: var(--logex-lime);">2</span>
-          </div>
-          <div>
-            <h5 class="text-sm font-semibold text-white mb-1">Data Processing</h5>
-            <p class="text-xs text-gray-400">Extract, organize, and analyze data automatically</p>
-          </div>
-        </div>
-
-        <div class="flex items-start">
-          <div class="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0" style="background: rgba(164,208,55,0.2);">
-            <span class="text-xs font-bold" style="color: var(--logex-lime);">3</span>
-          </div>
-          <div>
-            <h5 class="text-sm font-semibold text-white mb-1">Custom Solutions</h5>
-            <p class="text-xs text-gray-400">AI systems designed for your specific challenges</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Expandable Details -->
-    <div class="mb-6">
-      <button onclick="toggleServiceDetails('operations')" class="w-full py-2 text-sm text-[var(--logex-lime)] hover:text-white transition flex items-center justify-center">
-        <span>See Full Details & Why It Matters</span>
-        <svg class="w-4 h-4 ml-2 transform transition-transform" id="operations-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-
-      <div id="operations-details" class="hidden mt-4 pt-4 border-t border-gray-700 space-y-4">
-        <div>
-          <h4 class="text-sm font-semibold text-gray-300 mb-2">Common Automations:</h4>
-          <ul class="space-y-1 text-xs text-gray-400">
-            <li>• Lead collection & organization systems</li>
-            <li>• Document & data processing workflows</li>
-            <li>• Customer communication automation</li>
-            <li>• Report generation & analytics</li>
-            <li>• Task management & routing</li>
-            <li>• Any repetitive process in your business</li>
-          </ul>
-        </div>
-
-        <div class="p-4 rounded-xl bg-black/30 border border-gray-800">
-          <h4 class="text-sm font-bold text-[var(--logex-lime)] mb-2">💡 Why It Matters:</h4>
-          <p class="text-xs text-gray-300 leading-relaxed">
-            Let's build smart systems that do the work for you—24/7. <strong class="text-white">Free your team from repetitive tasks</strong> and focus on growth. Whether it's processing data, managing workflows, or handling communications, we create AI solutions that work exactly how your business needs them to.
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="mt-auto">
-      <button onclick="selectService('operations')" class="w-full py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center group/btn" style="background: linear-gradient(135deg, var(--logex-lime), var(--logex-lime-dark)); color: var(--logex-dark);">
-        Build Your Custom System
-        <svg class="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-</div>
-    <!-- Value Proposition -->
-    <div class="mt-12 text-center">
-      <div class="inline-flex items-center px-6 py-3 rounded-full glass">
-        <svg class="w-5 h-5 mr-2" fill="var(--logex-lime)" viewBox="0 0 20 20">
-          <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
-          <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 1 1 0 000 2H6a2 2 0 100 4h2a2 2 0 100-4h-.5a1 1 0 000-2H8a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5z"/>
-        </svg>
-        <span class="text-sm text-gray-300">Full implementation support, training, and ongoing optimization included</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Case Studies Section (Simplified) -->
-<section id="case-studies" class="py-20 px-4 relative">
-  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(164,208,55,0.02)] to-transparent"></div>
-
-  <div class="max-w-7xl mx-auto relative z-10">
-    <div class="text-center mb-16 reveal">
-      <div class="inline-flex items-center px-4 py-2 rounded-full text-sm mb-4" style="background: rgba(164,208,55,0.2); color: var(--logex-lime);">
-        <span class="mr-2">⚡</span>
-        PROVEN RESULTS
-      </div>
-      <h2 class="text-4xl md:text-5xl font-jakarta font-bold mb-4">
-        Real Solutions, <span class="lime-gradient-text">Real Impact</span>
-      </h2>
-      <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-        See how our AI automation transforms businesses across industries
+      
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-jakarta font-bold mb-6 leading-tight">
+        AI That <span class="animated-gradient-text">Never Stops</span>
+      </h1>
+      
+      <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">
+        RAG-powered assistants that capture leads, book appointments, and support customers 24/7—adapting to YOUR business knowledge and handling complex conversations intelligently.
       </p>
-    </div>
 
-    <!-- Metrics Overview -->
-    <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-6 mb-12">
-
-      <div class="glass p-6 rounded-2xl text-center reveal" style="animation-delay: 0.1s;">
-        <p class="text-3xl font-bold" style="color: var(--logex-lime);">95%</p>
-        <p class="text-sm text-gray-400">Time Saved</p>
-      </div>
-      <div class="glass p-6 rounded-2xl text-center reveal" style="animation-delay: 0.2s;">
-        <p class="text-3xl font-bold" style="color: var(--logex-lime);">5x</p>
-        <p class="text-sm text-gray-400">More Coverage</p>
-      </div>
-      <div class="glass p-6 rounded-2xl text-center reveal" style="animation-delay: 0.3s;">
-        <p class="text-3xl font-bold" style="color: var(--logex-lime);">24/7</p>
-        <p class="text-sm text-gray-400">Automation</p>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="text-center">
-      <p class="text-gray-400 mb-6">
-        Ready to experience the power of AI automation?
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/use-cases" class="btn-primary">
-          Explore All Use Cases →
-        </a>
-        <a href="#contact" class="btn-secondary">
-          Get Custom Solution
-        </a>
+      <!-- Stats Bar -->
+      <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="glass p-4 rounded-xl">
+          <p class="text-2xl font-bold" style="color: var(--logex-lime);">24/7</p>
+          <p class="text-xs text-gray-400">Availability</p>
+        </div>
+        <div class="glass p-4 rounded-xl">
+          <p class="text-2xl font-bold" style="color: var(--logex-lime);">87%</p>
+          <p class="text-xs text-gray-400">Automated</p>
+        </div>
+        <div class="glass p-4 rounded-xl">
+          <p class="text-2xl font-bold" style="color: var(--logex-lime);">3x</p>
+          <p class="text-xs text-gray-400">More Leads</p>
+        </div>
+        <div class="glass p-4 rounded-xl">
+          <p class="text-2xl font-bold" style="color: var(--logex-lime);">Instant</p>
+          <p class="text-xs text-gray-400">Response</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- What is RAG Section -->
+  <section class="py-20 px-4 relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(164,208,55,0.02)] to-transparent"></div>
 
-
-<!--  &lt;!&ndash; FAQ Section &ndash;&gt;-->
-<!--  <section class="py-20 px-4">-->
-<!--    <div class="max-w-3xl mx-auto">-->
-<!--      <div class="text-center mb-16">-->
-<!--        <h2 class="text-4xl md:text-5xl font-bold font-jakarta mb-4">-->
-<!--          Frequently Asked <span class="gradient-text">Questions</span>-->
-<!--        </h2>-->
-<!--      </div>-->
-
-<!--      <div class="space-y-4">-->
-<!--        &lt;!&ndash; FAQ Item 1 &ndash;&gt;-->
-<!--        <div class="glass rounded-2xl overflow-hidden">-->
-<!--          <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggleFAQ(0)">-->
-<!--            <span class="font-semibold">How quickly can I start seeing new clients?</span>-->
-<!--            <svg class="w-5 h-5 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">-->
-<!--              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>-->
-<!--            </svg>-->
-<!--          </button>-->
-<!--          <div class="faq-content hidden px-6 pb-4 text-gray-400">-->
-<!--            Most clients start seeing responses within the first week of using our system. The combination of targeted leads, business insights, and conversion-ready messaging typically generates meaningful conversations within 7-14 days.-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        &lt;!&ndash; FAQ Item 2 &ndash;&gt;-->
-<!--        <div class="glass rounded-2xl overflow-hidden">-->
-<!--          <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggleFAQ(1)">-->
-<!--            <span class="font-semibold">What industries do you work with?</span>-->
-<!--            <svg class="w-5 h-5 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">-->
-<!--              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>-->
-<!--            </svg>-->
-<!--          </button>-->
-<!--          <div class="faq-content hidden px-6 pb-4 text-gray-400">-->
-<!--            We serve Marketing & Advertising Agencies, SaaS & Software Companies, E-commerce & Retail Brands, and Service Providers & B2B Businesses. Our system adapts to any industry where client acquisition is critical to growth.-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        &lt;!&ndash; FAQ Item 3 &ndash;&gt;-->
-<!--        <div class="glass rounded-2xl overflow-hidden">-->
-<!--          <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggleFAQ(2)">-->
-<!--            <span class="font-semibold">How is this different from other lead generation?</span>-->
-<!--            <svg class="w-5 h-5 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">-->
-<!--              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>-->
-<!--            </svg>-->
-<!--          </button>-->
-<!--          <div class="faq-content hidden px-6 pb-4 text-gray-400">-->
-<!--            We don't just provide leads—we deliver a complete client acquisition system. Each lead comes with business insights and a high-converting mechanism designed specifically for them. It's the difference between cold outreach and starting warm, informed conversations.-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-
-  <!-- CTA -->
-<section class="py-20 px-4">
-  <div class="max-w-4xl mx-auto">
-    <div class="glass-dark p-12 rounded-3xl text-center relative overflow-hidden">
-      <div class="absolute inset-0 opacity-20" style="background: linear-gradient(135deg, var(--logex-lime), transparent); animation: gradientX 5s ease infinite;"></div>
-      <div class="relative z-10">
-        <h2 class="text-4xl md:text-5xl font-jakarta font-bold mb-6">
-          Ready to <span class="lime-gradient-text">Automate Your Growth?</span>
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="text-center mb-16 reveal">
+        <div class="inline-flex items-center px-4 py-2 rounded-full text-sm mb-4" style="background: rgba(164,208,55,0.2); color: var(--logex-lime);">
+          <span class="mr-2">💡</span>
+          WHY RAG MATTERS
+        </div>
+        <h2 class="text-4xl md:text-5xl font-jakarta font-bold mb-4">
+          Retrieval-Augmented <span class="lime-gradient-text">Generation</span>
         </h2>
-        <p class="text-xl text-gray-300 mb-8">
-          Where logic meets execution. Let AI handle the repetitive while you scale.
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+          RAG technology ensures your AI adapts to YOUR business data, providing accurate, contextual responses
+        </p>
+      </div>
+
+      <!-- RAG Benefits -->
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="glass p-8 rounded-3xl reveal card-hover">
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-6" style="background: rgba(164,208,55,0.2);">
+            🧠
+          </div>
+          <h3 class="text-xl font-bold mb-3">Learns Your Business</h3>
+          <p class="text-gray-400 mb-4">
+            RAG allows the AI to access and understand your specific products, services, and policies
+          </p>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Product knowledge</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Service details</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Company policies</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass p-8 rounded-3xl reveal card-hover">
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-6" style="background: rgba(164,208,55,0.2);">
+            🎯
+          </div>
+          <h3 class="text-xl font-bold mb-3">Context-Aware Responses</h3>
+          <p class="text-gray-400 mb-4">
+            Delivers accurate answers based on real-time context and conversation history
+          </p>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Conversation memory</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Contextual understanding</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Accurate responses</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass p-8 rounded-3xl reveal card-hover">
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-6" style="background: rgba(164,208,55,0.2);">
+            ⚡
+          </div>
+          <h3 class="text-xl font-bold mb-3">Adaptive & Scalable</h3>
+          <p class="text-gray-400 mb-4">
+            Handles unlimited conversations simultaneously while maintaining quality
+          </p>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Unlimited capacity</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Consistent quality</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[var(--logex-lime)] mr-2">✓</span>
+              <span>Real-time updates</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Core Functions -->
+      <div class="glass-dark p-12 rounded-3xl mb-12">
+        <h3 class="text-2xl font-bold text-center mb-8">
+          Core <span class="lime-gradient-text">RAG Assistant Functions</span>
+        </h3>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-20 h-20 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4" style="background: linear-gradient(135deg, rgba(164,208,55,0.2), rgba(164,208,55,0.1));">
+              🎯
+            </div>
+            <h4 class="text-lg font-bold mb-2 text-[var(--logex-lime)]">Smart Lead Capture</h4>
+            <p class="text-sm text-gray-400">
+              Intelligently identifies visitor intent and captures qualified leads through natural conversation
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-20 h-20 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4" style="background: linear-gradient(135deg, rgba(164,208,55,0.2), rgba(164,208,55,0.1));">
+              💬
+            </div>
+            <h4 class="text-lg font-bold mb-2 text-[var(--logex-lime)]">Adaptive Support</h4>
+            <p class="text-sm text-gray-400">
+              Provides instant, accurate support by accessing your knowledge base and understanding context
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-20 h-20 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4" style="background: linear-gradient(135deg, rgba(164,208,55,0.2), rgba(164,208,55,0.1));">
+              📅
+            </div>
+            <h4 class="text-lg font-bold mb-2 text-[var(--logex-lime)]">Automated Booking</h4>
+            <p class="text-sm text-gray-400">
+              Handles appointment scheduling, confirmations, and reminders without human intervention
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industry Use Cases -->
+      <div class="text-center mb-12">
+        <h3 class="text-2xl font-bold mb-8">
+          Industry-Specific <span class="lime-gradient-text">Applications</span>
+        </h3>
+        <p class="text-gray-400 mb-8">
+          Detailed use cases and live demonstrations coming soon for each industry
+        </p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="glass p-6 rounded-2xl">
+            <div class="text-3xl mb-3">🏥</div>
+            <h4 class="font-semibold mb-1">Healthcare</h4>
+            <p class="text-xs text-gray-400 mb-2">Patient intake, appointment booking</p>
+            <span class="text-xs text-[var(--logex-lime)]">Coming Soon</span>
+          </div>
+          <div class="glass p-6 rounded-2xl">
+            <div class="text-3xl mb-3">🛍️</div>
+            <h4 class="font-semibold mb-1">E-commerce</h4>
+            <p class="text-xs text-gray-400 mb-2">Product support, order tracking</p>
+            <span class="text-xs text-[var(--logex-lime)]">Coming Soon</span>
+          </div>
+          <div class="glass p-6 rounded-2xl">
+            <div class="text-3xl mb-3">🏢</div>
+            <h4 class="font-semibold mb-1">Professional Services</h4>
+            <p class="text-xs text-gray-400 mb-2">Consultation booking, FAQs</p>
+            <span class="text-xs text-[var(--logex-lime)]">Coming Soon</span>
+          </div>
+          <div class="glass p-6 rounded-2xl">
+            <div class="text-3xl mb-3">🎓</div>
+            <h4 class="font-semibold mb-1">Education</h4>
+            <p class="text-xs text-gray-400 mb-2">Student support, enrollment</p>
+            <span class="text-xs text-[var(--logex-lime)]">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Impact Metrics -->
+      <div class="text-center mb-12">
+        <h3 class="text-2xl font-bold mb-8">
+          Expected <span class="lime-gradient-text">Performance Metrics</span>
+        </h3>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-4 gap-6">
+          <div class="glass p-6 rounded-2xl text-center">
+            <p class="text-3xl font-bold" style="color: var(--logex-lime);"><1s</p>
+            <p class="text-sm text-gray-400">Response Time</p>
+          </div>
+          <div class="glass p-6 rounded-2xl text-center">
+            <p class="text-3xl font-bold" style="color: var(--logex-lime);">87%</p>
+            <p class="text-sm text-gray-400">Query Resolution</p>
+          </div>
+          <div class="glass p-6 rounded-2xl text-center">
+            <p class="text-3xl font-bold" style="color: var(--logex-lime);">24/7</p>
+            <p class="text-sm text-gray-400">Availability</p>
+          </div>
+          <div class="glass p-6 rounded-2xl text-center">
+            <p class="text-3xl font-bold" style="color: var(--logex-lime);">3x</p>
+            <p class="text-sm text-gray-400">Lead Capture</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="text-center">
+        <p class="text-gray-400 mb-6">
+          Ready to deploy an AI assistant that never stops working for your business?
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#contact" class="btn-primary text-lg">Deploy Your AI Solution →</a>
-          <button onclick="scrollToServices()" class="btn-secondary text-lg">View Solutions</button>
-        </div>
-        <div class="mt-8 flex justify-center space-x-8 text-sm text-gray-400">
-          <div class="flex items-center">
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="var(--logex-lime)" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-            </svg>
-            Live Demos
-          </div>
-          <div class="flex items-center">
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="var(--logex-lime)" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-            </svg>
-            20-Day Setup
-          </div>
+          <a href="/#contact" class="btn-primary">
+            Deploy Your RAG Assistant →
+          </a>
+          <a href="/use-cases" class="btn-secondary">
+            Explore Other Solutions
+          </a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact -->
-<section id="contact" class="py-20 px-4">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-    <!-- Info -->
-    <div>
-      <h2 class="text-4xl font-jakarta font-bold mb-6">
-        Let's Build Your <span class="lime-gradient-text">AI Workforce</span>
-      </h2>
-      <p class="text-xl text-gray-400 mb-8">
-        Tell us what you want to automate and we'll show you how AI can transform your operations.
-      </p>
-      <ul class="space-y-4 mb-8 text-gray-300">
-        <li class="flex items-center">
-          <svg class="w-5 h-5 mr-3" fill="none" stroke="var(--logex-lime)" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-          </svg>
-  RAG assistants for lead capture, support & appointments
-        </li>
-        <li class="flex items-center">
-          <svg class="w-5 h-5 mr-3" fill="none" stroke="var(--logex-lime)" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-          </svg>
-          AI mentors for social media growth
-        </li>
-        <li class="flex items-center">
-          <svg class="w-5 h-5 mr-3" fill="none" stroke="var(--logex-lime)" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-          </svg>
-          Custom systems for your workflows
-        </li>
-        <li class="flex items-center">
-          <svg class="w-5 h-5 mr-3" fill="none" stroke="var(--logex-lime)" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-          </svg>
-          Try before you buy with live demos
-        </li>
-      </ul>
-      <div class="glass p-6 rounded-2xl flex items-center">
-        <span class="text-3xl mr-4">🚀</span>
-        <div>
-          <h4 class="font-semibold">Free Your Team</h4>
-          <p class="text-sm text-gray-400">From repetitive tasks to strategic work</p>
+  <!-- How It Works Section -->
+  <section class="py-20 px-4 bg-gradient-to-b from-transparent via-[rgba(164,208,55,0.02)] to-transparent">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-jakarta font-bold mb-4">
+          How RAG Assistant <span class="lime-gradient-text">Works</span>
+        </h2>
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+          From setup to deployment in days, not months
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-full flex items-center justify-center text-3xl mx-auto mb-4" style="background: rgba(164,208,55,0.2);">
+            1
+          </div>
+          <h3 class="font-semibold mb-2">Knowledge Upload</h3>
+          <p class="text-sm text-gray-400">Upload your business data, FAQs, and policies</p>
+        </div>
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-full flex items-center justify-center text-3xl mx-auto mb-4" style="background: rgba(164,208,55,0.2);">
+            2
+          </div>
+          <h3 class="font-semibold mb-2">AI Training</h3>
+          <p class="text-sm text-gray-400">RAG technology learns your specific context</p>
+        </div>
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-full flex items-center justify-center text-3xl mx-auto mb-4" style="background: rgba(164,208,55,0.2);">
+            3
+          </div>
+          <h3 class="font-semibold mb-2">Integration</h3>
+          <p class="text-sm text-gray-400">Deploy on your website, WhatsApp, or platform</p>
+        </div>
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-full flex items-center justify-center text-3xl mx-auto mb-4" style="background: rgba(164,208,55,0.2);">
+            4
+          </div>
+          <h3 class="font-semibold mb-2">Go Live</h3>
+          <p class="text-sm text-gray-400">Start capturing leads and serving customers 24/7</p>
         </div>
       </div>
     </div>
-    <!-- Form -->
-    <div class="glass p-8 rounded-3xl">
-      <form id="contact-form" class="space-y-5">
-        <div>
-          <label class="block text-sm font-medium mb-2">Full Name *</label>
-          <input type="text" name="name" required class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:border-[var(--logex-lime)] focus:outline-none transition">
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="glass-dark p-12 rounded-3xl text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background: linear-gradient(135deg, var(--logex-lime), transparent);"></div>
+        <div class="relative z-10">
+          <div class="inline-flex items-center px-4 py-2 rounded-full text-sm mb-6" style="background: rgba(164,208,55,0.2); color: var(--logex-lime);">
+            <span class="mr-2">🤖</span>
+            AI THAT NEVER SLEEPS
+          </div>
+          <h2 class="text-4xl md:text-5xl font-jakarta font-bold mb-6">
+            Ready for <span class="lime-gradient-text">24/7 Intelligence?</span>
+          </h2>
+          <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Deploy a RAG-powered assistant that learns your business and handles customer interactions intelligently, any time of day.
+          </p>
+          <a href="/#contact" class="btn-primary text-lg inline-flex items-center">
+            Deploy Your Assistant
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
         </div>
-        <div>
-          <label class="block text-sm font-medium mb-2">Company *</label>
-          <input type="text" name="company" required class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:border-[var(--logex-lime)] focus:outline-none transition">
-        </div>
-        <div>
-          <label class="block text-sm font-medium mb-2">Email *</label>
-          <input type="email" name="email" required class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:border-[var(--logex-lime)] focus:outline-none transition">
-        </div>
-<div>
-  <label class="block text-sm font-medium mb-2">Which solution interests you? *</label>
-  <select name="service" required class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:border-[var(--logex-lime)] focus:outline-none transition text-gray-100">
-    <option value="" class="bg-gray-800">Select a solution</option>
-    <option value="adaptive-rag-assistant" class="bg-gray-800">Adaptive RAG Assistant</option>
-    <option value="ai-social-media-mentor" class="bg-gray-800">AI Social Media Mentor</option>
-    <option value="custom-ai-systems" class="bg-gray-800">Custom AI Systems</option>
-    <option value="multiple" class="bg-gray-800">Multiple Solutions</option>
-  </select>
-</div>
-        <div>
-          <label class="block text-sm font-medium mb-2">What do you want to automate? *</label>
-          <textarea name="message" required rows="4" placeholder="Example: We need to capture leads from our website 24/7, or we want to automate our social media growth strategy..." class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:border-[var(--logex-lime)] focus:outline-none transition"></textarea>
-        </div>
-        <button type="submit" class="w-full btn-primary text-lg">Get Your AI Solution →</button>
-        <p class="text-center text-sm text-gray-500">We'll respond within 24 hours with a custom automation plan</p>
-      </form>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Footer -->
   <footer class="py-12 px-4 border-t border-gray-800">
     <div class="max-w-7xl mx-auto text-center">
       <div class="flex items-center justify-center mb-8">
-        <img src="./assets/images/logobig.svg" alt="LogexAI" class="h-10 w-auto md:h-14">
+        <img src="../../assets/images/logobig.svg" alt="LogexAI" class="h-10 w-auto md:h-14">
       </div>
       <p class="text-gray-400 mb-2 text-lg">WHERE LOGIC MEETS EXECUTION</p>
-      <p class="text-gray-500 mb-6">Helping businesses grow with smarter, faster, and more effective client acquisition</p>
+      <p class="text-gray-500 mb-6">RAG-powered AI assistants that adapt to your business</p>
       <div class="flex justify-center space-x-6 text-sm text-gray-400 mb-6">
-        <a href="#" class="hover:text-[var(--logex-lime)] transition">Privacy Policy</a>
-        <a href="#" class="hover:text-[var(--logex-lime)] transition">Terms of Service</a>
-        <a href="#" class="hover:text-[var(--logex-lime)] transition">Contact</a>
+        <a href="/" class="hover:text-[var(--logex-lime)] transition">Home</a>
+        <a href="/use-cases" class="hover:text-[var(--logex-lime)] transition">All Use Cases</a>
+        <a href="/#contact" class="hover:text-[var(--logex-lime)] transition">Contact</a>
       </div>
       <p class="text-sm text-gray-500">© 2025 LogexAI. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- JavaScript -->
-  <script src="./assets/js/main.js"></script>
+  <script src="../../assets/js/main.js"></script>
 </body>
 </html>
